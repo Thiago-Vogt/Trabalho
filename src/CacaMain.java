@@ -19,6 +19,8 @@ public class CacaMain {
         do {
             switch (opcao) {
                 case 1:
+                    break;
+                case 2:
 
                     break;
             

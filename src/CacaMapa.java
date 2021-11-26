@@ -2,13 +2,14 @@ public class CacaMapa {
 
     private short qtdLinha;
     private short qtdColuna;
-    private char[][] mapa;
+    private char mapa[][];
 
     public CacaMapa() {
         mapaEntrada();
     }
 
     public void imprimir() {
+        
     }
 
     private void mapaEntrada() {
@@ -29,8 +30,4 @@ public class CacaMapa {
 
 
 
-
-    public static void main(String[] args) {
-        new CacaMapa();
-    }
 }
