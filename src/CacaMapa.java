@@ -5,11 +5,21 @@ public class CacaMapa {
     private char mapa[][];
 
     public CacaMapa() {
+        qtdLinha = 10;
+        qtdColuna = 5;
+        mapa = new char[qtdLinha][qtdColuna];
         mapaEntrada();
     }
 
     public void imprimir() {
-        
+        for (int i = 0; i < qtdLinha; i++) {
+            for (int j = 0; j < qtdColuna; j++) {
+                System.out.print(mapa[i][j]);
+                if (j == 4) {
+                    System.out.println();
+                }
+            }
+        }
     }
 
     private void mapaEntrada() {

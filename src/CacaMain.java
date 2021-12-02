@@ -7,6 +7,8 @@ public class CacaMain {
 
 
     private CacaMain() {
+        palavras = new CacaPalavras();
+        mapa = new CacaMapa();
         Scanner teclado = new Scanner(System.in);
         System.out.println("____ Menu: Caça Palavras ____");
         System.out.println("1. listar palavras");
@@ -19,9 +21,10 @@ public class CacaMain {
         do {
             switch (opcao) {
                 case 1:
+                    palavras.imprimir();
                     break;
                 case 2:
-
+                    mapa.imprimir();
                     break;
             
                 default:

@@ -5,11 +5,17 @@ public class CacaPalavras {
     private String palavras[][];
 
     public CacaPalavras() {
+        qtdLinha = 5;
+        qtdColuna = 5;
+        palavras = new String[qtdLinha][qtdColuna];
+
         palavrasEntrada();
     }
 
     public void imprimir() {
-
+        for (int i = 0; i < qtdLinha; i++) {
+                System.out.println(palavras[i][0]);
+        }
     }
 
     private void palavrasEntrada() {
@@ -19,8 +25,5 @@ public class CacaPalavras {
         palavras[3][0] = "OBJETO";
         palavras[4][0] = "VETOR";
         }
-
-
-
 
 }
