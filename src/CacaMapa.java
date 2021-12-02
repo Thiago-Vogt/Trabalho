@@ -36,8 +36,19 @@ public class CacaMapa {
         mapa[ 9][ 0]='V'; mapa[ 9][ 1]='E'; mapa[ 9][ 2]='T'; mapa[ 9][ 3]='O'; mapa[ 9][ 4]='R';
     }
 
+    private void mapaLinha() {
+        for (int i = 0; i < qtdColuna; i++) {
+            System.out.print("----");
+        }
+    }
 
-
+    private void pesquisar(String[][] palavras) {
+        for (int i = 0; i < qtdLinha; i++) {
+            for (int j = 0; j < qtdColuna; j++) {
+                
+            }
+        }
+    }
 
 
 
