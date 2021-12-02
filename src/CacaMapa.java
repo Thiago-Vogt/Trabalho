@@ -14,8 +14,9 @@ public class CacaMapa {
     public void imprimir() {
         for (int i = 0; i < qtdLinha; i++) {
             for (int j = 0; j < qtdColuna; j++) {
-                System.out.print(mapa[i][j]);
+                System.out.print("| " + mapa[i][j] + " ");
                 if (j == 4) {
+                    System.out.print("|");
                     System.out.println();
                 }
             }
