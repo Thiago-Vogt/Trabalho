@@ -6,16 +6,15 @@ public class CacaPalavras {
 
     public CacaPalavras() {
         qtdLinha = 5;
-        qtdColuna = 5;
+        qtdColuna = 2;
         palavras = new String[qtdLinha][qtdColuna];
 
         palavrasEntrada();
+        palavrasMatriz();
     }
 
-    public void imprimir() {
-        for (int i = 0; i < qtdLinha; i++) {
-            System.out.println(palavras[i][0]);
-        }
+    public String[][] palavrasMatriz() {
+        return palavras;
     }
 
     private void palavrasEntrada() {
@@ -26,13 +25,13 @@ public class CacaPalavras {
         palavras[4][0] = "VETOR";
     }
 
-    public void respostas() {
-        int teste = 1;
-        if (teste == 1) {
-            System.out.println("achou TESTE!!!!!!!!!!!!!"); //Fixme: 
-        } else {
-            System.out.println("NÃO achou TESTE!!!!!!!!!"); //Fixme: 
+    public void imprimir() {
+        for (int i = 0; i < palavras.length; i++) {
+            System.out.println(palavras[i][0]);
         }
     }
 
+    public void respostas() {
+        System.out.println("nao achou");
+    }
 }
