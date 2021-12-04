@@ -7,7 +7,7 @@ public class CacaMain {
 
 
     private CacaMain() {
-        
+
         palavras = new CacaPalavras();
         mapa = new CacaMapa();
 
@@ -42,11 +42,10 @@ public class CacaMain {
             opcao = teclado.nextInt();
         } while (opcao != 4);
         
+        // palavras.pesquisa();
+
         teclado.close();
     }
-
-
-
 
 
 

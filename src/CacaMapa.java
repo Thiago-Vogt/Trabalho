@@ -42,7 +42,7 @@ public class CacaMapa {
         }
     }
 
-    private void pesquisar(String[][] palavras) {
+    private void pesquisa(String[][] palavras) {
         for (int i = 0; i < qtdLinha; i++) {
             for (int j = 0; j < qtdColuna; j++) {
                 
