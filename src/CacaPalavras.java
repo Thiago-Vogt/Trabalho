@@ -24,6 +24,10 @@ public class CacaPalavras {
         palavras[2][0] = "WHILE";
         palavras[3][0] = "OBJETO";
         palavras[4][0] = "VETOR";
-        }
+    }
+
+    public void respostas() {
+        System.out.println("respostas()");
+    }
 
 }
