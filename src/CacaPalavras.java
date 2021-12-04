@@ -14,7 +14,7 @@ public class CacaPalavras {
 
     public void imprimir() {
         for (int i = 0; i < qtdLinha; i++) {
-                System.out.println(palavras[i][0]);
+            System.out.println(palavras[i][0]);
         }
     }
 
@@ -27,7 +27,12 @@ public class CacaPalavras {
     }
 
     public void respostas() {
-        System.out.println("respostas()");
+        int teste = 1;
+        if (teste == 1) {
+            System.out.println("achou TESTE!!!!!!!!!!!!!"); //Fixme: 
+        } else {
+            System.out.println("NÃO achou TESTE!!!!!!!!!"); //Fixme: 
+        }
     }
 
 }

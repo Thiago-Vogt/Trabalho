@@ -12,27 +12,25 @@ public class CacaMain {
 
         Scanner teclado = new Scanner(System.in);
         System.out.println("____ Menu: Caça Palavras ____\n1. listar palavras" +
-        "2. listar mapa\n3. listar respostas\n4. sair\n  __ opção:");
+            "\n2. listar mapa\n3. listar respostas\n4. sair\n  __ opção:");
         int opcao = teclado.nextInt();
 
         do {
             switch (opcao) {
-                case 1 : palavras.imprimir(); break;
-                case 2 : mapa.imprimir(); break;
-                case 3 : palavras.respostas(); break;   
+                case 1 : palavras.imprimir() ;  break;
+                case 2 : mapa.imprimir()     ;  break;
+                case 3 : palavras.respostas();  break;   
                 default:
                     System.out.println("opção errada!");
                     break;
             }
             System.out.println("____ Menu: Caça Palavras ____\n1. listar palavras" +
-            "2. listar mapa\n3. listar respostas\n4. sair\n  __ opção:");
+            "\n2. listar mapa\n3. listar respostas\n4. sair\n  __ opção:");
             opcao = teclado.nextInt();
         } while (opcao != 4);
         
         teclado.close();
     }
-
-
 
     public static void main(String[] args) {
         new CacaMain();
