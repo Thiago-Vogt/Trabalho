@@ -2,7 +2,7 @@ public class CacaPalavras {
 
     private short qtdLinha;
     private short qtdColuna;
-    private String palavras[][];
+    private String palavras[][] = new String[qtdLinha][qtdColuna];
 
     public CacaPalavras() {
         qtdLinha = 5;

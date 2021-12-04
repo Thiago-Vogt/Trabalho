@@ -2,7 +2,7 @@ public class CacaMapa {
 
     private short qtdLinha;
     private short qtdColuna;
-    private char mapa[][];
+    private char mapa[][] = new char[qtdLinha][qtdColuna];
 
     public CacaMapa() {
         qtdLinha = 10;
