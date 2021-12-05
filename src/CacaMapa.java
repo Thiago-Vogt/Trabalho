@@ -66,8 +66,7 @@ public class CacaMapa {
         for (int i = 0; i < qtdColuna; i++) {
             System.out.print("----");
         }
-        System.out.print("-");
-        System.out.println();
+        System.out.println("-");
     }
 
     public void imprimir() {
@@ -92,9 +91,12 @@ public class CacaMapa {
                             palavras[palavra][1] = "[" + a + ", " + (b - palavras[palavra][0].length() + 1) + "]";
                             caractere = 0;
                         }
-                    } 
+                    } else {
+                        caractere = 0;
+                    }
                 }    
             }
+            caractere = 0;
             for (int a = 0; a < qtdColuna; a++) {
                 for (int b = 4; b > -1; b--) {
                     if (mapa[a][b] == palavras[palavra][0].charAt(caractere)) {
@@ -103,27 +105,35 @@ public class CacaMapa {
                             palavras[palavra][1] = "[" + a + ", " + ( + palavras[palavra][0].length() - 1) + "]";
                             caractere = 0;
                         }
-                    } 
+                    } else {
+                        caractere = 0;
+                    }
                 }    
             }
             short c;
-            for (c = 0; c < 5; c++) {
+            caractere = 0;
+            for (c = 0; c < qtdColuna; c++) {
                 for (short d = 0; d < 10; d++) {
-                    while (mapa[d][c] == palavras[palavra][0].charAt(caractere)) {
+                    if (mapa[d][c] == palavras[palavra][0].charAt(caractere)) {
                             caractere++;
                         if (caractere == palavras[palavra][0].length()) {
                             palavras[palavra][1] = "[" + (d - palavras[palavra][0].length() + 1) + ", " + c + "]";
                             caractere = 0;
                         }
-                    } 
+                    } else {
+                      caractere = 0;
+                    }
                 }
             }
-            for (c = 0; c < 5; c++) {
-                for (short d = 9; d >= 0; d--) {
+            caractere = 0;
+            for (c = 0; c < qtdColuna; c++) {
+                for (short d = 9; d > -1; d--) {
                     if (mapa[d][c] == palavras[palavra][0].charAt(caractere)) {
                         caractere++;
                         if (caractere == palavras[palavra][0].length()) {
                             palavras[palavra][1] = "[" + (d + palavras[palavra][0].length() - 1) + ", " + c + "]";
+                            caractere = 0;
+                        } else {
                             caractere = 0;
                         }
                     }
