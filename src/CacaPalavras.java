@@ -1,12 +1,11 @@
 public class CacaPalavras {
 
-    private short qtdLinha;
-    private short qtdColuna;
+    private final short qtdLinha = 5;
+    private final short qtdColuna = 2;
     private String palavras[][] = new String[qtdLinha][qtdColuna];
 
     public CacaPalavras() {
-        qtdLinha = 5;
-        qtdColuna = 2;
+        
         palavras = new String[qtdLinha][qtdColuna];
 
         palavrasEntrada();

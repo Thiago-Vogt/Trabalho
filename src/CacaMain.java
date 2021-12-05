@@ -9,6 +9,7 @@ public class CacaMain {
 
         palavras = new CacaPalavras();
         mapa = new CacaMapa();
+        mapa.pesquisa(palavras.palavrasMatriz());
 
         Scanner teclado = new Scanner(System.in);
         System.out.println("____ Menu: Caça Palavras ____\n1. listar palavras" +
