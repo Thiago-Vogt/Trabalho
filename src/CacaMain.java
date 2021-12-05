@@ -12,7 +12,7 @@ public class CacaMain {
         mapa.pesquisa(palavras.palavrasMatriz());
 
         Scanner teclado = new Scanner(System.in);
-        System.out.println("____ Menu: Caça Palavras ____\n1. listar palavras" +
+        System.out.println("\n____ Menu: Caça Palavras ____\n1. listar palavras" +
             "\n2. listar mapa\n3. listar respostas\n4. sair\n  __ opção:");
         int opcao = teclado.nextInt();
 

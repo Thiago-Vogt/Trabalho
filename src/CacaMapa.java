@@ -1,7 +1,7 @@
 public class CacaMapa {
 
-    private short qtdLinha = 10;
-    private short qtdColuna = 5;
+    private final short qtdLinha = 10;
+    private final short qtdColuna = 5;
     private char mapa[][] = new char[qtdLinha][qtdColuna];
 
     public CacaMapa() {
@@ -23,20 +23,21 @@ public class CacaMapa {
     }
 
     private void mapaLinha() {
-        for (short i = 0; i < 5; i++) {
-            System.out.print("----"); 
+        for (int i = 0; i < qtdColuna; i++) {
+            System.out.print("----");
         }
-        System.out.println("-");
-      }
-      
+        System.out.print("-");
+        System.out.println();
+    }
+    
     public void imprimir() {
-        mapaLinha();
         
-        for (short i = 0; i < 10; i++) {
-            for (short j = 0; j < 5; j++) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 5; j++) {
                 System.out.print("| " + mapa[i][j] + " "); 
             }
             System.out.println("|");
+            mapaLinha();
         } 
     }
 
