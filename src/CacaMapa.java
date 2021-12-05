@@ -9,16 +9,6 @@ public class CacaMapa {
         mapaEntrada();
     }
 
-    public void imprimir() {
-        for (int i = 0; i < qtdLinha; i++) {
-            for (int j = 0; j < qtdColuna; j++) {
-                System.out.print("| " + mapa[i][j] + " ");
-                System.out.println("|");
-                mapaLinha();
-            }
-        }
-    }
-
     private void mapaEntrada() {
         mapa[ 0][ 0]='C'; mapa[ 0][ 1]='C'; mapa[ 0][ 2]='Q'; mapa[ 0][ 3]='W'; mapa[ 0][ 4]='E';
         mapa[ 1][ 0]='I'; mapa[ 1][ 1]='X'; mapa[ 1][ 2]='F'; mapa[ 1][ 3]='O'; mapa[ 1][ 4]='R';
@@ -33,11 +23,21 @@ public class CacaMapa {
     }
 
     private void mapaLinha() {
-        for (int i = 0; i < qtdColuna; i++) {
-            System.out.print("----");
-            System.out.print("-");
-            System.out.println();
+        for (short i = 0; i < 5; i++) {
+            System.out.print("----"); 
         }
+        System.out.println("-");
+      }
+      
+    public void imprimir() {
+        mapaLinha();
+        
+        for (short i = 0; i < 10; i++) {
+            for (short j = 0; j < 5; j++) {
+                System.out.print("| " + mapa[i][j] + " "); 
+            }
+            System.out.println("|");
+        } 
     }
 
     public void pesquisa(String palavras[][]) {

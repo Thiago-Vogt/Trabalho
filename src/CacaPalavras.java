@@ -25,12 +25,13 @@ public class CacaPalavras {
     }
 
     public void imprimir() {
-        for (int i = 0; i < palavras.length; i++) {
+        for (short i = 0; i < palavras.length; i++) {
             System.out.println(palavras[i][0]);
         }
     }
 
     public void respostas() {
+        for (short i = 0; i < palavras.length; i++)
         System.out.println("nao achou");
     }
 }
