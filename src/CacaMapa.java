@@ -42,9 +42,65 @@ public class CacaMapa {
     }
 
     public void pesquisa(String palavras[][]) {
-        for (int i = 0; i < qtdLinha; i++) {
-            for (int j = 0; j < qtdColuna; j++) {
-            }
-        }
+        // for (short palavraAtual = 0; palavraAtual < palavras.length; palavraAtual++) {
+        //     short caractere = 0;
+        //     for (short a = 0; a < qtdColuna; a++) {
+        //         for (short b = 0; b < qtdColuna; b++) {
+        //             if (mapa[a][b] == palavras[palavraAtual][0].charAt(caractere)) {
+        //                 caractere++;
+        //                 if (caractere == palavras[palavraAtual][0].length()) {
+        //                     palavras[palavraAtual][1] = "[" + a + ", " + (b - palavras[palavraAtual][0].length() + 1) + "]";
+        //                     caractere = 0;
+        //                 }
+        //             } else {
+        //                 caractere = 0;
+        //             }
+        //         }    
+        //     }
+        //     caractere = 0;
+        //     for (short a = 0; a < qtdColuna; a++) {
+        //         for (short b = 4; b < qtdColuna; b--) {
+        //             if (mapa[a][b] == palavras[palavraAtual][0].charAt(caractere)) {
+        //                 caractere++;
+        //                 if (caractere == palavras[palavraAtual][0].length()) {
+        //                     palavras[palavraAtual][1] = "[" + a + ", " + ( + palavras[palavraAtual][0].length() - 1) + "]";
+        //                     caractere = 0;
+        //                 }
+        //             } else {
+        //                 caractere = 0;
+        //             }
+        //         }    
+        //     }
+
+        //     caractere = 0;
+        //     // short k;
+        //     for (short k = 0; k < qtdColuna; k++) {
+        //         for (short l = 0; l < qtdColuna; l++) {
+        //             if (mapa[k][l] == palavras[palavraAtual][0].charAt(caractere)) {
+        //                 caractere++;
+        //                 if (caractere == palavras[palavraAtual][0].length()) {
+        //                     palavras[palavraAtual][1] = "[" + (l - palavras[palavraAtual][0].length() + 1) + ", " + k + "]";
+        //                     caractere = 0;
+        //                 }
+        //             } else {
+        //                 caractere = 0;
+        //             }
+        //         }    
+        //     }
+        //     caractere = 0;
+        //     for (short k = 0; k < qtdColuna; k++) {
+        //         for (short l = 4; l < qtdColuna; l--) {
+        //             if (mapa[k][l] == palavras[palavraAtual][0].charAt(caractere)) {
+        //                 caractere++;
+        //                 if (caractere == palavras[palavraAtual][0].length()) {
+        //                     palavras[palavraAtual][1] = "[" + (l + palavras[palavraAtual][0].length() - 1) + ", " + k + "]";
+        //                     caractere = 0;
+        //                 }
+        //             } else {
+        //                 caractere = 0;
+        //             }
+        //         }    
+        //     }
+        // }
     }
 }

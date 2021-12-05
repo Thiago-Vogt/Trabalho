@@ -29,9 +29,15 @@ public class CacaPalavras {
             System.out.println(palavras[i][0]);
         }
     }
-
     public void respostas() {
-        for (short i = 0; i < palavras.length; i++)
-        System.out.println("nao achou");
+        for (short i = 0; i < palavras.length; i = (short) (i + 1)) {
+            String achou = palavras[i][1];
+            if (achou == null) {
+                System.out.println("Nao encontrou -> " + palavras[i][0]);
+            } else {
+                System.out.println(palavras[i][1] + " -> " + palavras[i][0]);
+            }
+        }
+        System.out.println();
     }
 }

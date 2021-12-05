@@ -29,7 +29,6 @@ public class CacaMain {
             "\n2. listar mapa\n3. listar respostas\n4. sair\n  __ opção:");
             opcao = teclado.nextInt();
         } while (opcao != 4);
-        
         teclado.close();
     }
 
