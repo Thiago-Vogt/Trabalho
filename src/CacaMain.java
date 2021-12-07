@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
 public class CacaMain {
-
     private CacaPalavras palavras;
     private CacaMapa mapa;
 
     private CacaMain() {
-
         palavras = new CacaPalavras();
         mapa = new CacaMapa();
         mapa.pesquisa(palavras.palavrasMatriz());

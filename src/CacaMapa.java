@@ -36,7 +36,7 @@ public class CacaMapa {
                         if (caractere == palavras[palavra][0].length()) {
                             palavras[palavra][1] = "[" + a + ", " + (b - palavras[palavra][0].length() + 1) + "]";
                             caractere = 0;
-                        }
+                        }   
                     } else {
                         caractere = 0;
                     }
@@ -77,7 +77,7 @@ public class CacaMapa {
                     if (mapa[d][c] == palavras[palavra][0].charAt(caractere)) {
                         caractere++;
                         if (caractere == palavras[palavra][0].length()) {
-                            palavras[palavra][1] = "[" + (d + palavras[palavra][0].length() - 1) + "," + c + "]";
+                            palavras[palavra][1] = "[" + (d + palavras[palavra][0].length() - 1) + ", " + c + "]";
                             caractere = 0;
                         } 
                     } else {
