@@ -1,7 +1,7 @@
 public class CacaMapa {
 
-    private final int qtdLinha = 10;
-    private final int qtdColuna = 5;
+    private final short qtdLinha = 10;
+    private final short qtdColuna = 5;
     private char mapa[][] = new char[qtdLinha][qtdColuna];
 
     public CacaMapa() {
@@ -45,7 +45,7 @@ public class CacaMapa {
             }
             caractere = 0;
             for (int a = 0; a < qtdColuna; a++) {
-                for (int b = 4; b > -1; b--) {
+                for (int b = qtdColuna - 1; b > -1; b--) {
                     if (mapa[a][b] == palavras[palavra][0].charAt(caractere)) {
                         caractere++;
                         if (caractere == palavras[palavra][0].length()) {
@@ -57,10 +57,10 @@ public class CacaMapa {
                     }
                 }    
             }
-            short c;
+            int c;
             caractere = 0;
             for (c = 0; c < qtdColuna; c++) {
-                for (short d = 0; d < 10; d++) {
+                for (int d = 0; d < qtdLinha; d++) {
                     if (mapa[d][c] == palavras[palavra][0].charAt(caractere)) {
                             caractere++;
                         if (caractere == palavras[palavra][0].length()) {
@@ -73,8 +73,8 @@ public class CacaMapa {
                 }
             }
             caractere = 0;
-            for (c = 0; c < 5; c++) {
-                for (short d = 9; d >= 0; d--) {
+            for (c = 0; c < qtdColuna; c++) {
+                for (int d = qtdLinha - 1; d >= 0; d--) {
                     if (mapa[d][c] == palavras[palavra][0].charAt(caractere)) {
                         caractere++;
                         if (caractere == palavras[palavra][0].length()) {
