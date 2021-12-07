@@ -33,7 +33,7 @@ public class CacaPalavras {
         for (short i = 0; i < palavras.length; i++) {
             String achou = palavras[i][1];
             if (achou == null) {
-                System.out.println("NAO ACHOU - " + palavras[i][0]);
+                System.out.println(".... palavra NÃO encontrada: " + palavras[i][0]);
             } else {
                 System.out.println(palavras[i][1] + " - " + palavras[i][0]);
             }
